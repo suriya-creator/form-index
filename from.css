@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-image: url(https://img.freepik.com/free-vector/hexagonal-technology-pattern-mesh-background-with-text-space_1017-26293.jpg?semt=ais_hybrid);
+    height:auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #25032c;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(184, 14, 14, 0.1);
+    text-align: center;
+  }
+  h2 {
+    animation: glow 1.5s infinite ease-in-out;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #22a0b6;
+    padding: 20px;
+    padding-top: 0%;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 10px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    background: #f0f4f8;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #74b9ff;
+  }
+  
+  label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: #aaa;
+    transition: all 0.3s;
+    pointer-events: none;
+  }
+  
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 8px;
+    font-size: 12px;
+    color: #74b9ff;
+    background-color: #fff;
+    padding: 0 5px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: none;
+    text-align: left;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #171718;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #b920c7;
+  }
+  
+  @media (max-width: 480px) {
+    .form-container {
+        width: 90%;
+    }
+  }
+  

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="from.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2><u>Form Validation</u></h2>
+        <form id="registrationForm">
+            <div class="input-group">
+                <input type="text" id="username" required placeholder=" ">
+                <label for="username">Username</label>
+                <span class="error" id="usernameError"></span>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" required placeholder=" ">
+                <label for="email">Email</label>
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" required placeholder=" ">
+                <label for="password">Password</label>
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="confirmPassword" required placeholder=" ">
+                <label for="confirmPassword">Confirm Password</label>
+                <span class="error" id="confirmPasswordError"></span>
+            </div>
+            <div class="input-group">
+                <input type="number" id="Contact" required placeholder=" ">
+                <label for="number">Contact Number</label>
+                <span class="error" id="contactnumberError"></span>
+            </div>
+            <div class="input-group">
+                <input type="text" id="Address" required placeholder=" ">
+                <label for="Address">Message</label>
+                <span class="error" id="confirmPasswordError"></span>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="from.js"></script>
+</body>
+</html>
